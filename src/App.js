@@ -6,6 +6,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       value: '',
+      total: ''
     }
     this.handleChange= this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -21,7 +22,8 @@ class App extends React.Component {
   }
   calculate() {
     this.setState({
-      value: (Number(this.state.value) * 1.09).toFixed(2)
+      total: (Number(this.state.value) * 1.0725).toFixed(2),
+      value: ''
     })
   }
   render() {
@@ -34,7 +36,7 @@ class App extends React.Component {
         <input id="submit" value="Submit" type="submit" onClick={this.calculate}/>
 
       <div>
-      <h3>Your total will be:{this.state.value} </h3>
+      <h3>Your total will be: {this.state.total} </h3>
     </div>
       </div>
     </form>
