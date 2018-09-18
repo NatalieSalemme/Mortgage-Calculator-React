@@ -1,18 +1,3 @@
 .App {
   text-align: center;
 }
-
-.labels {
-    display: inline-block;
-    float: left;
-    clear: left;
-    width: 340px;
-    text-align: right;
-}
-#loan,
-#interest,
-#length {
-  display: inline-block;
-  float: left;
-  margin-bottom: 6px;
-}

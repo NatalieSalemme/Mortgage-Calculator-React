@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Mortgage Calculator</h1>
+        <h1>Sales Tax Calculator</h1>
         <Input />
       </div>
     );
