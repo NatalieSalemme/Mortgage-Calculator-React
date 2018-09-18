@@ -1,3 +1,12 @@
 .App {
   text-align: center;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#submit {
+  height: 19.5px;
+}
