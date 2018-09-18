@@ -21,22 +21,26 @@ class App extends React.Component {
     e.preventDefault();
   }
   calculate() {
+    if(isNaN(this.state.value)) {
+      alert('Please enter a valid number');
+    } else {
     this.setState({
-      total: (Number(this.state.value) * 1.0725).toFixed(2),
+      total: '$' + (Number(this.state.value) * 1.0725).toFixed(2),
       value: ''
-    })
+    });
+    }
   }
   render() {
     return (
       <form onSubmit={this.handleSubmit} className="container">
-        <h1>Sales Tax Calculator</h1>
+        <h1 className="title">Sales Tax Calculator</h1>
         <div className="input-container">
         <label className="labels" for="price">Price: </label>
         <input id="price" type="text" placeholder="Price" value={this.state.value} onChange={this.handleChange} />
         <input id="submit" value="Submit" type="submit" onClick={this.calculate}/>
-
       <div>
-      <h3>Your total will be: {this.state.total} </h3>
+      <h3>Your total will be:</h3>
+      <h3 className="total">{this.state.total}</h3>
     </div>
       </div>
     </form>

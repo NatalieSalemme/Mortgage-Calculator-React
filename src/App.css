@@ -6,7 +6,21 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  border: 3px solid black;
+  border-width: medium;
+  border-style: outset;
+  border-radius: 10px;
+  width: 50%;
+  margin: auto;
+  margin-top: 4em;
+  background-color: gray;
 }
 #submit {
   height: 19.5px;
+}
+.title {
+  color: navy;
+}
+.total {
+  color: darkred;
 }
