@@ -23,6 +23,9 @@ class App extends React.Component {
   calculate() {
     if(isNaN(this.state.value)) {
       alert('Please enter a valid number');
+      this.setState({
+        value: ''
+      });
     } else {
     this.setState({
       total: '$' + (Number(this.state.value) * 1.0725).toFixed(2),
