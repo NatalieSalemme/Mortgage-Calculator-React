@@ -24,7 +24,8 @@ class App extends React.Component {
     if(isNaN(this.state.value)) {
       alert('Please enter a valid number');
       this.setState({
-        value: ''
+        value: '',
+        total: ''
       });
     } else {
     this.setState({
